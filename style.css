@@ -637,7 +637,7 @@ p {
   min-height: 36px;
   font-size: 16px;
   flex: 1 0 120px;
-  padding: 0 1.25em;
+  padding: 13px 1.25em;
   border-radius: 8px;
   /* outline: none; */
 }
