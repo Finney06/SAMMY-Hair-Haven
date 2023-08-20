@@ -1018,7 +1018,9 @@ footer .address {
     padding: 10px 30px;
   }
 
-  
+  #shop-header {
+    padding: 10px 30px;
+  }
 
   h1 {
     font-size: 38px;
