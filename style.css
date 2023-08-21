@@ -254,15 +254,17 @@ body {
 
 .text-content h3 {
   color: var(--Brown);
+  margin-bottom: 30px;
 }
 
 .text-content p {
   color: var(--Brown);
   line-height: 2;
+  margin-bottom: 30px;
 }
 
 .text-content h3,
-p {
+.text-content p {
   margin-bottom: 30px;
 }
 
@@ -814,6 +816,10 @@ footer .address {
   color: var(--white);
 }
 
+#page-header p {
+  margin-top: 0;
+}
+
 #pagination {
   text-align: center;
 }
@@ -826,6 +832,29 @@ footer .address {
   color: var(--white);
   font-weight: 600;
 }
+
+/* Single Product  */
+#product-details .single-product-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+/* .small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+} */
+
+#quantity {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+
 
 
 

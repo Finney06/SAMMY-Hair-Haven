@@ -31,4 +31,27 @@ window.addEventListener('scroll', function() {
       behavior: 'smooth'
     });
   });
+
+  // INCREASE DECREASE
+  const quantityElement = document.getElementById("quantity");
+  const decreaseButton = document.getElementById("decrease");
+  const increaseButton = document.getElementById("increase");
+
+  let quantity = 0;
+
+  decreaseButton.addEventListener("click", () => {
+      if (quantity > 0) {
+          quantity--;
+          updateQuantity();
+      }
+  });
+
+  increaseButton.addEventListener("click", () => {
+      quantity++;
+      updateQuantity();
+  });
+
+  function updateQuantity() {
+      quantityElement.textContent = quantity;
+  }
   
