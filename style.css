@@ -795,7 +795,7 @@ footer .address {
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  background: #262222;
+  background: #181616;
 }
 
 #page-header {
@@ -834,8 +834,15 @@ footer .address {
 }
 
 /* Single Product  */
+#product-details {
+  display: flex;
+  /* height: 100vh; */
+  background: #262222;
+  padding-top: 40px;
+}
+
 #product-details .single-product-image {
-  width: 40%;
+  width: 30%;
   margin-right: 50px;
 }
 
@@ -849,9 +856,76 @@ footer .address {
   cursor: pointer;
 } */
 
-#quantity {
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.star-bottom {
+  margin-bottom: 0;
+}
+
+.sty {
+  font-size: 12px;
+color: var(--Brown);
+}
+
+.single-product-details h2,
+.single-product-details p {
+  color: var(--Brown);
+}
+
+.single-product-details h3 {
+  color: var(--white);
+  font-size: 26px;
+  font-family: "Maven Pro", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* #quantity {
   font-size: 20px;
   margin: 0 10px;
+} */
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+    align-items: center;
+    gap: 10px
+}
+
+.quantity-control-container {
+  display: flex;
+}
+
+.quantity-number-button {
+  margin: 0;
+  background: transparent;
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+  padding: 0 10px;
+  line-height: normal;
+  border: 1px solid var(--Brown);
+  color: var(--Brown);
+  transition: 0.3s ease;
+}
+
+.quantity-number-button:hover {
+  background: var(--Brown);
+  color: var(--white);
+}
+
+.quantity-number-input {
+  width: 40px;
+  height: 30px;
+  border: 1px solid var(--Brown);
+  text-align: center;
+  outline: none;
+}
+
+.add-to-cart-icon {
+  padding-left: 5px;
 }
 
 
@@ -1085,10 +1159,25 @@ footer .address {
     display: none;
   }
 
+  /* Single Product  */
+  #product-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+#product-details .single-product-image {
+  width: 100%;
+  margin-right: 0px;
+}
+
+#product-details .single-product-details {
+  width: 100%;
+}
+}
+
   /* Media Query for Samsung Fold  */
   @media (max-width: 280px) {
     #newsletter h4 {
       font-size: 20px;
     }
   }
-}

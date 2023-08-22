@@ -33,25 +33,18 @@ window.addEventListener('scroll', function() {
   });
 
   // INCREASE DECREASE
-  const quantityElement = document.getElementById("quantity");
+  const quantityInput = document.getElementById("quantity");
   const decreaseButton = document.getElementById("decrease");
   const increaseButton = document.getElementById("increase");
 
-  let quantity = 0;
-
   decreaseButton.addEventListener("click", () => {
-      if (quantity > 0) {
-          quantity--;
-          updateQuantity();
+      let currentValue = parseInt(quantityInput.value);
+      if (currentValue > 0) {
+          quantityInput.value = currentValue - 1;
       }
   });
 
   increaseButton.addEventListener("click", () => {
-      quantity++;
-      updateQuantity();
+      let currentValue = parseInt(quantityInput.value);
+      quantityInput.value = currentValue + 1;
   });
-
-  function updateQuantity() {
-      quantityElement.textContent = quantity;
-  }
-  
