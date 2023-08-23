@@ -928,6 +928,79 @@ color: var(--Brown);
   padding-left: 5px;
 }
 
+/* Blog page  */
+#page-header.blog-header {
+  background-image: url(Assets/Images/blog-hair.jpg);
+  height: 45vh;
+}
+
+#blog-page {
+  padding: 150px 150px 0 150px;
+  background-color: #262222;
+}
+
+#blog-page .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 90px;
+}
+
+#blog-page .blog-img {
+  width: 50%;
+  margin-right: 40px;
+} 
+
+#blog-page img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog-page .blog-details {
+  width: 50%;
+} 
+
+#blog-page .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #847d68;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+#blog-page .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #847d68;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog-page .blog-details a:hover {
+  color: var(--Brown);
+}
+
+#blog-page .blog-details a:hover::after {
+  background-color: var(--Brown);
+}
+
+#blog-page .blog-box .date {
+  position: absolute;
+  top: -87px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--Brown);
+  z-index: -9;
+}
+
+
 
 
 
@@ -1114,6 +1187,48 @@ color: var(--Brown);
   footer .column {
     margin-bottom: 10px;
   }
+
+    /* Single Product  */
+#product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#product-details .single-product-image {
+width: 100%;
+margin-right: 0px;
+}
+
+#product-details .single-product-details {
+width: 100%;
+}
+
+  /* Blog page */
+  #blog-page {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog-page .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog-page .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #blog-page .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #blog-page .blog-details {
+    width: 100%;
+  }
 }
 
 @media (max-width: 477px) {
@@ -1159,20 +1274,6 @@ color: var(--Brown);
     display: none;
   }
 
-  /* Single Product  */
-  #product-details {
-    display: flex;
-    flex-direction: column;
-  }
-
-#product-details .single-product-image {
-  width: 100%;
-  margin-right: 0px;
-}
-
-#product-details .single-product-details {
-  width: 100%;
-}
 }
 
   /* Media Query for Samsung Fold  */
