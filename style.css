@@ -846,16 +846,6 @@ footer .address {
   margin-right: 50px;
 }
 
-/* .small-img-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.small-img-col {
-  flex-basis: 24%;
-  cursor: pointer;
-} */
-
 #product-details .single-product-details {
   width: 50%;
   padding-top: 30px;
@@ -881,11 +871,6 @@ color: var(--Brown);
   font-family: "Maven Pro", sans-serif;
   margin-bottom: 20px;
 }
-
-/* #quantity {
-  font-size: 20px;
-  margin: 0 10px;
-} */
 
 .button-container {
   display: flex;
@@ -931,7 +916,8 @@ color: var(--Brown);
 /* Blog page  */
 #page-header.blog-header {
   background-image: url(Assets/Images/blog-hair.jpg);
-  height: 45vh;
+  height: 40vh;
+  background-position: 45% 35%;
 }
 
 #blog-page {
@@ -1000,6 +986,38 @@ color: var(--Brown);
   z-index: -9;
 }
 
+
+/* About Page  */
+#page-header.about-header {
+  background-image: linear-gradient(rgba(84, 70, 51, 0.7), rgba(84, 70, 51, 0.7)),url(Assets/Images/about-us8.jpg);
+  background-position: 50% 45%;
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+  background: #181616;
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+#about-head div {
+  padding-left: 40px;
+  color: #ab9574;
+}
+
+#about-head div h2 {
+  color: var(--Brown);
+}
+
+#about-head div p {
+  color: var(--Brown);
+}
 
 
 
@@ -1228,6 +1246,21 @@ width: 100%;
 
   #blog-page .blog-details {
     width: 100%;
+  }
+
+  
+  /* About Page  */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0px;
   }
 }
 
