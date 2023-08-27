@@ -240,6 +240,22 @@ body {
   color: var(--Brown);
 }
 
+/* CART STYLING */
+.cart {
+  position: relative;
+}
+
+.p-count {
+  background: var(--Brown);
+  border-radius: 50%;
+  padding: 2px 5px;
+  display: flex;
+  bottom: -10px;
+  left: 10px;
+  font-size: 10px;
+  position: absolute;
+}
+
 /* HAIR CONTENT SECTION */
 #hair-content {
   display: flex;
@@ -543,10 +559,23 @@ body {
   min-width: 250px;
 }
 
+.blog-container .blog-content .blog-image {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blog-container .blog-content img {
+  transition: 0.3s ease;
+}
+
+.blog-container .blog-content:hover  img {
+  transform: scale(1.3) rotate(-10deg);
+  opacity: 0.8;
+}
+
 #blog .blog-image img {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
 }
 
 .dim-brown {
@@ -569,15 +598,15 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
-.blog-info .author {
+.blog-container .blog-content .blog-info .author {
   color: #847d68;
   /* transition: all ease-in-out 300ms; */
 }
 
-.blog-info .author:hover {
+.blog-container .blog-content:hover .blog-info .author {
   text-decoration: underline !important;
 }
 
@@ -585,7 +614,7 @@ body {
   margin-top: 0 !important;
 }
 
-.h4 {
+.blog-container .blog-content .h4 {
   color: #ab9574;
   font-family: var(--heading_font);
   transition: all ease-in-out 200ms;
@@ -593,8 +622,9 @@ body {
   line-height: initial;
 }
 
-.h4:hover {
+.blog-container .blog-content:hover h4 {
   color: #cea260;
+  cursor: pointer;
 }
 
 .calender {
@@ -924,6 +954,20 @@ color: var(--Brown);
   background-color: #262222;
 }
 
+#blog-page .blog-box .blog-img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#blog-page .blog-box img {
+  transition: 0.3s ease;
+}
+
+#blog-page .blog-box:hover img {
+  transform: scale(1.3) rotate(-10deg);
+  /* opacity: 0.8; */
+}
+
 #blog-page .blog-box {
   display: flex;
   align-items: center;
@@ -967,7 +1011,7 @@ color: var(--Brown);
   right: -60px;
 }
 
-#blog-page .blog-details a:hover {
+#blog-page .blog-box:hover .blog-details a{
   color: var(--Brown);
 }
 
